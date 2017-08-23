@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/com/gxa/dao/JdbcBuild.java=GBK
+encoding//src/com/gxa/servlet/CheckcodeServlet.java=GBK
+encoding//src/com/gxa/servlet/LoginServlet.java=GBK
+encoding//src/com/gxa/servlet/ShowCourseServlet.java=GBK
+encoding//src/com/gxa/util/StrUtil.java=GBK
+encoding/<project>=UTF-8

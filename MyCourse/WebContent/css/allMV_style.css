@@ -1,0 +1,1019 @@
+@charset "utf-8";
+/* CSS Document */
+body { /*全体风格*/
+	background-color: rgb(241, 241, 241);
+	color: rgb(51, 51, 51);
+	margin: 0px;
+	padding: 0px;
+	font-family: '微软雅黑', '黑体';
+	font-weight: inherit;
+	font-size: 12px;
+	line-height: 22px;
+	/*text-shadow:0px 0px 4px white, 0px -5px 4px rgb(255, 255, 51), 2px -1px 6px rgb(255, 221, 51), 
+	2px -5px 5px rgb(255, 136, 0), 2px -5px 1px rgb(255, 34, 0);*/
+}
+
+.topbar { /*栏目滚动条*/
+	position: fixed; /*生成绝对定位的元素，相对于浏览器窗口进行定位。*/
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 299;
+	height: 39px;
+	font: 12px/1.5 Tahoma, '微软雅黑', 'Microsoft Yahei', "hiragino sans gb",
+		Helvetica, Arial, "宋体", 'sans-serif';
+	background: url("../images/allMV_pic/bar1.jpg") repeat-x scroll 0% 0%
+		white;
+	opacity: 0.9; /*透明度*/
+}
+
+.topbar .content { /*栏目内容选项*/
+	max-width: 1560px;
+	min-width: 960px;
+	height: 39px;
+	margin: 0px auto;
+	padding: 0px 10px;
+	padding-right: 0px;
+	z-index: 299;
+	float: left;
+}
+
+.content h1 { /*logo的div链接标签*/
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	opacity: 1; /*透明度*/
+}
+
+.content ul { /*栏目的ul标签*/
+	float: left;
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px
+}
+
+.content h1 a.logo {
+	display: block;
+	width: 98px;
+	height: 39px;
+	margin: 0px;
+	margin-right: 20px;
+	background: url("../images/allMV_pic/logo1.png") no-repeat scroll 0% 0%
+		transparent;
+	text-indent: -999em;
+	text-decoration: none;
+}
+
+.content ul.menus { /*栏目的ul标签*/
+	float: left;
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.topbar .content li.menu { /*li的样式*/
+	position: relative;
+	float: left;
+	z-index: 299;
+	margin: 0px;
+	list-style: none outside none;
+}
+
+.content li a.link,.content .login a { /*首页,MV,V榜，资讯标签*/
+	display: block;
+	padding: 0px 16px;
+	line-height: 39px; /*要和栏目的高度一样，不然li的边框会溢出会溢出*/
+	cursor: pointer;
+	overflow: hidden;
+	text-decoration: none;
+	outline: 0px none;
+	font-size: 12px;
+	font-weight: 600;
+	color: black;
+}
+
+.content li a.link:hover,.login a:hover { /*栏目超链接伪标签效果*/
+	color: white;
+	background-color: #F60;
+	border: 0px solid rgb(192, 208, 130);
+	border-radius: 4px; /*增加圆角边框*/
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.topbar .login { /*登陆以及注册div*/
+	position: absolute; /*防止出现放大或者缩小而引起错位*/
+	top: 0px;
+	right: 10px;
+	height: 39px; /*和content栏目div一样高*/
+	line-height: 39px;
+}
+
+.content .login a {
+	float: left;
+}
+
+.topbar .search { /*大的搜索DIV*/
+	/*position: relative;
+	float: left;	
+	margin: 6px auto 0px;
+    margin-left:400px;*/
+	position: absolute; /*防止出现放大或者缩小而引起错位*/
+	top: 8px;
+	right: 180px;
+	width: 223px;
+	height: 24px;
+	border-radius: 45px;
+	background-color: rgb(219, 219, 219);
+	border: none;
+}
+
+.search .searchbody {
+	width: 182px;
+	height: 23px;
+	margin-left: 15px;
+	z-index: 2;
+	border: none;
+}
+
+.searchbody input { /*搜索输入框*/
+	color: #000;
+	width: 180px;
+	height: 22px;
+	margin: 0x;
+	border: 0px solid rgb(219, 219, 219);
+	float: left;
+	opacity: 0.5;
+	font-family: "微软雅黑";
+}
+
+.searchbody input:focus {
+	opacity: 0.9;
+}
+
+
+
+.searchbody button { /*搜索按钮*/
+	position: absolute;
+	top: 0px;
+	right: 9px;
+	width: 19px;
+	height: 24px;
+	border: 0px none;
+	background: url("../images/allMV_pic/search.jpg") no-repeat;
+	cursor: pointer;
+}
+
+.top_box { /*整个页面作为大面板..默认的z-index为0*/
+	padding-top: 48px;
+	min-width: 964px;
+	padding-bottom: 15px;
+}
+
+.top_box .wrap { /*内部大面板*/
+	width: 964px;
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	color: rgb(51, 51, 51);
+	font-size: 12px;
+	font-weight: normal;;
+}
+
+.allmv .top_cur { /*上面的一个小条条*/
+	height: 5px;
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+.allmv .main_bg { /*主页面*/
+	background-color: rgb(249, 249, 249);
+	border-left: 1px;
+	border-right: 1px solid rgb(216, 217, 218);
+	overflow: hidden;
+	position: relative;
+	font-weight: normal;
+}
+
+/***************************左边多项搜索div***************************************/
+.allmv .leftbar { /*左边div条*/
+	width: 201px;
+	float: left;
+	background-color: rgb(249, 249, 249);
+	overflow: hidden;
+	width: 201px;
+	position: relative;
+}
+
+.allmv .leftbar h2 { /*全部mv标题*/
+	font-size: 17px;
+	font-family: '微软雅黑', '黑体';
+	font-weight: bold;
+	color: rgb(153, 153, 153);
+	height: 22px;
+	overflow: hidden;
+	padding: 15px 0px;
+	text-align: center;
+	border-bottom: 1px solid rgb(229, 229, 229);
+	margin: 0px;
+}
+
+.allCategory { /*左边div条的下半部分*/
+	padding: 0px 16px 30px 16px;
+}
+
+.allCategory h3 { /*分标题*/
+	border-bottom: 1px solid #FC9;
+	height: 22px;
+	font-size: 16px;
+	color: #999;
+	font-weight: bold;
+	font-family: '微软雅黑', '黑体';
+	padding: 1px 0px;
+	marigin: 0px;
+	clear: both;
+}
+
+.allCategory ul { /*ul样式*/
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	list-style: none;
+}
+
+.allCategory ul li { /*li样式*/
+	float: left;
+	width: 70px;
+	white-space: nowrap;
+	margin-right: 12px;
+	height: 19px;
+	line-height: 19px;
+	margin-bottom: 4px;
+	font-weight: normal;
+}
+
+.allCategory ul li a { /*a标签样式*/
+	display: inline-block;
+	padding: 0px 8px;
+	color: rgb(51, 51, 51);
+	text-decoration: none;
+	outline: 0px none;
+	font-weight: normal;
+}
+
+.allCategory ul li a:hover { /*伪标签，产生效果*/
+	color: #74D557;
+	background-color: White;
+	border: 1px solid rgb(192, 208, 130);
+	border-radius: 3px; /*增加圆角边框*/
+	padding: 0px 7px;
+	line-height: 18px;
+	margin: 0px;
+}
+
+.allCategory  ul li a.on {
+	background-color: rgb(108, 166, 32);
+	color: white;
+	border-radius: 3px;
+	margin: 0px;
+}
+
+.allCategory  ul li #on1,#on2,#on3,#on4,#on5 {
+	background-color: rgb(108, 166, 32);
+	color: white;
+	border-radius: 3px;
+	margin: 0px;
+	font-weight:bold;
+	opacity:0.9;
+}
+
+
+
+/******************************************************右边主div***********************************************************/
+.right_main { /*右边主div*/
+	width: 750px;
+	background-color: green;
+	float: right;
+	padding-bottom: 50px;
+	background-color: rgb(252, 255, 250);
+	border-left: 1px solid rgb(229, 229, 229);
+	min-height: 820px;
+	height: auto;
+}
+
+
+/**************************已选项目div**************************************/
+.right_main .selected {
+	padding: 15px 20px;
+	height: 22px;
+	overflow: hidden;
+	background: url("../images/allMV_pic/456.jpg") repeat-x scroll 0px 0px
+		White; /*背景*/
+}
+
+.selected  h2 {
+	margin: 0px auto;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 0px 0px 4px white, 0px -5px 4px rgb(255, 255, 51), 2px -1px
+		6px rgb(255, 221, 51), 2px -5px 5px rgb(255, 136, 0), 2px -5px 1px
+		rgb(255, 34, 0);
+	font-family: Georgia;
+	font-style: italic;
+}
+
+
+
+/**************************已选*************************************/
+/*.right_main .selected resetSelected {
+	margin-left: 10px;
+	float: right;
+	height: 22px;
+	overflow: hidden;
+	display: none;
+	color: rgb(102, 102, 102);
+	text-decoration: none;
+	outline: 0px none;
+} */
+
+
+/**************************字母搜索div**************************************/
+.right_main .letterCategory {
+	height: 43.5px;
+	width: 750px;
+	border: none;
+	/*background: url("../images/allMV_pic/123.jpg") repeat-x scroll 0px 0px 
+		White; */
+	background-color: #F6F6F6;
+	padding-left: 3px;
+	margin: 0px;
+	float: left;
+	overflow: hidden;
+}
+
+ .letterCategory .letter_m {
+	margin:0px auto;
+	border:none;
+	width:100%;
+	height:26px;
+	margin-top:8px;
+	padding-left:8px;
+ }
+	 
+
+.letterCategory a {
+	display: block;
+	float: left;
+	height: 24px;
+	width: 24px;
+	text-align:center;
+	color: rgb(51, 51, 51);
+	text-decoration: none;
+	font-weight: normal;
+	border-radius:4px;
+	margin:0px 1px;;
+} 
+
+.letterCategory a:hover {
+	color: white;
+	background-color: #F60;
+	border: 0px solid rgb(192, 208, 130);
+	opacity: 0.7;
+	border:none;
+	text-decoration: none;
+}
+
+.letterCategory a#on6{
+	background-color: rgb(108, 166, 32);
+	color: white;
+	font-weight: bold;
+	opacity:0.9;
+}
+
+/**************************歌手列表显示**************************************/
+ 
+.right_main #artistsdiv {
+	/*background: url("../images/allMV_pic/123.jpg") repeat; */
+	background-color:white;
+	width:100%;
+	/*height:100px;*/
+	float:left;/*不可少，否则错位*/
+	/*max-height:150px;*/
+	height:auto;
+	overflow:hidden;
+	text-decoration: none;
+	outline: 0px none;
+	padding: 10px 0px 0px 20px;
+	opacity:0.8;
+	/*display:none;*/
+}
+
+.artistslist h3 {
+	font-size: 58px;
+	line-height: 58px;
+	float: left;
+	padding-right: 18px;
+	color: rgb(102, 153, 0);
+	font-weight: normal;
+	margin:0px;
+	margin-right:10px;
+}
+
+.artistslist .singerslist {/*相应字母开头的歌手列表*/
+	height:100%;
+	width:88%;
+	position:relative;
+	float:left;
+	margin:0px;
+	/*background-color:red;*/
+	overflow:hidden;
+	dispaly:table;/*类似于表格。配合display:block模块*/
+}
+
+
+.artistslist .singerslist a {
+    font-size: 12px;
+    display: block;/*模块化*/
+    float: left;
+    white-space: nowrap;
+   	width: 75px;
+   	font-weight:normal;
+    overflow: hidden;
+    text-overflow: ellipsis;/*超出部分用省略符号代替*/
+    color: rgb(51, 51, 51);
+    padding-bottom: 8px;
+    padding-left:40px;
+    margin:0px;
+    margin-right: 10px;
+    text-decoration:none;/*无下划线*/
+    outline:0px none;/*边框轮廓无修饰*/
+}
+
+.singerslist a.showmore_singer {
+	position: absolute;;/*相对于其最接近的一个具有定位设置的父级对象进行绝对定位，所有他的上级设置了relative*/
+	bottom: 0px;
+	right: 0px;
+	width:25px;
+}
+
+.singerslist a:hover {
+	color: rgb(102, 153, 0);
+	text-decoration:underline;
+	outline:0px none;
+}
+
+.right_main .someArtist {/*指定歌手的简介*/
+	position:relative;
+	float:left;
+	width:100%;
+	/*height:80px;*/
+	margin:0px;
+    padding: 18px 0px 17px 0px;
+    background-color: white;
+    overflow: hidden;
+    display:none;
+}
+
+.right_main .singer_name_h3{
+	margin-left:15px;
+	float:left;
+	width:25%;
+	height:100%;
+	overflow:visiable;
+}
+
+.right_main .someArtist h3 {/*歌手名*/
+	width:100%;
+	margin:0px;
+	margin-bottom:15px;
+    font-size: 20px;
+    font-family: '黑体','微软雅黑';
+    font-weight: normal;
+    float: left;
+    color: rgb(102, 153, 0);
+}
+
+.right_main .someArtist .detail {/*歌手详细介绍*/
+	margin:0px;
+	width: 70%;
+    height: auto !important;
+    word-wrap: break-word;/*强制换行。断开单词。在单词到边界时，下个字母自动到下一行*/
+    float: right;
+}
+
+
+/****************************排序显示div********************************************/
+.right_main .mv_rank {
+	border-top: 1px solid rgb(189, 189, 189);
+	border-bottom: 1px solid rgb(189, 189, 189);
+	border-radius: 4px; /*增加圆角边框*/
+	clear: both;
+	height: 43px;
+	position: relative;
+	z-index: 10;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.mv_rank .a_form {/*表格,视图*/
+	position:absolute;
+	right:8px;
+	top:12px;
+	width:30px;
+	height:18px;
+	/*background: url("../images/allMV_pic/list_show.png") no-repeat;*/
+	border:none;
+	border-radius:3px;
+	background-color:rgb(108, 166, 32);
+}
+
+.mv_rank .a_list {/*列表*/
+	position:absolute;
+	right:40px;
+	top:12px;
+	width:30px;
+	height:18px;
+	border-radius:3px;
+	/*background: url("../images/allMV_pic/form_show.png") no-repeat;*/
+	border:none;
+}
+
+
+
+.right_main .mv_rank  dt {
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	width: 170px;
+	text-align: right;
+	color: rgb(153, 153, 153);
+}
+
+dl {
+	margin: 0px;
+	padding: 0px;
+}
+
+.mv_rank .mvtab dd {
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	position: relative;
+	margin: 0px;
+	padding: 0px 12px;
+}
+
+.mv_rank .mvtab dd a.c9 {
+	padding-right: 0px;
+	position: relative;
+	z-index: 2;
+	float: left;
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+	outline: 0px none;
+}
+
+.mv_rank .mvtab dd a.c9:hover { /*标签变绿色*/
+	color: rgb(102, 153, 0);
+}
+
+.mv_rank .mvtab dd .selectDate {
+	border-left: 1px solid rgb(214, 214, 214);
+	border-bottom: 1px solid rgb(214, 214, 214);
+	border-right: 1px solid rgb(214, 214, 214);
+	border-top: 2px solid rgb(102, 153, 0);
+	padding-top: 40px;
+	padding-bottom: 5px;
+	background-color: rgb(247, 252, 240);
+	left: -1px;
+	z-index: 1;
+	width: 100%;
+	top: 0px;
+	position: absolute;
+	display: none; /*初始化不显示*/
+}
+
+.mv_rank .mvtab dd .selectDate a {
+	/*注意! .mv_rank .mvtab dd .selectDate  中的dd .selectDate有个空格 .selectDate只类标记！ */
+	display: block; /*模块化，否则不能一行一个，配合width90%*/
+	height: 28px;
+	line-height: 28px;
+	color: rgb(102, 102, 102);
+	text-align: center;
+	width: 90%;
+	margin: 0px auto;
+	padding: 1px;
+	text-decoration: none; /*去掉下划线*/
+}
+
+.mv_rank .mvtab dd:hover .selectDate { /*伪标签，监听dd，控制selectDate的显示与隐藏*/
+	display: block;
+	opacity: 0.8;
+}
+
+.mv_rank .mvtab dd:hover .selectDate a:hover {
+	/*伪标签，监听selectDate div里的a标签，呈现效果*/
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 0px;
+	border: 2px solid #CCC;
+	border-radius: 5px; /*增加圆角边框*/
+	background-color: White;
+}
+
+/*************************广告div****************************************/
+.right_main .ad {
+	height: 135px;
+	padding: 1px 0px;
+}
+
+.right_main .eee {
+	margin: 0px auto;
+	width: 690px;
+	height: 130px;
+}
+
+.right_main .ad img {
+	border: none;
+}
+
+/**************************mv播放列表div**************************************/
+
+.main_right .mv_list_vertical {
+	width: 100%;
+	overflow: hidden;
+	padding: 0px;
+	color: rgb(102, 102, 102);
+}
+
+.right_main .mv_list_vertical ul {
+	width: 800px;
+	padding: 10px 0px;
+	height: auto !important;  
+	overflow: visible; /*溢出可见*/
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.right_main .mv_list_vertical li.show_list{ /*每个li里存一个MV视频*/
+	float: left;
+	width: 118px;
+	height: 140px;
+	overflow: hidden;
+	padding: 8px 35px 0px;
+	margin:0px;
+	list-style: none outside none;
+}
+
+.mv_list_vertical  .thumb { /*li的上半部分*/
+	margin-bottom: 0px;
+	overflow: hidden;
+	position: relative;
+	height: 76px;
+	width: 128px;
+	display: block; /*模块化*/
+}
+
+.thumb_mv a {
+	margin: 0px auto;
+}
+
+.thumb_mv  img {
+	width: 120px;
+	height: 68px;
+	display: block; /*不可少， 否则溢出*/
+	border: 0px none;
+	text-align:ecnter;
+}
+
+.thumb_mv  .a_div a span { /*用来显示图片，透明*/
+	/*float: left;
+	margin: -67px 0px 0px;*/
+	position: absolute;
+	left: 2px;
+	top: 7px;
+	height: 65px;
+	width: 119px;
+	border-radius: 1px;
+	background-color: #CCC; /*这句以及下一句都不能少，我也不知道为什么，否则不能显示出透明*/
+	opacity: 0.000001;
+}
+
+.thumb_mv .a_div a span:hover { /*用来显示图片，png本来就是透明图片! 透明*/
+	/*position: relative;*/
+	margin-left: 0px;
+	background: url("../images/allMV_pic/bg_play_hover.png") no-repeat;
+	opacity: 1; /*不可少，否则看不见图，因为前面设置为0.00001*/
+}
+
+.thumb .a_div {
+	margin-top: 5px;
+	width: 120px;
+	padding:0px;
+	border: 1px solid #999;
+}
+
+.thumb_mv:hover .a_div {
+	border: 1px solid #2EC939;
+	border-radius: 1px; /*增加圆角边框*/
+}
+
+.thumb .shdIco { /*高清标示div，绝对定位*/
+	clear: both;
+	background-color: #F27900;
+	width: 27px;
+	height: 14px;
+	text-indent: 1px; /*首行文本缩进*/
+	overflow: hidden;
+	position: absolute;
+	top: 7px;
+	left: 3px;
+}
+
+.shdIco font.gq {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 13px;
+}
+
+.thumb .v_time { /*MV播放时间,无背景*/
+	position: absolute;
+	bottom: 3px;
+	left: 3px;
+	height: 16px;
+	overflow: hidden;
+}
+
+.v_time .v_time_num {
+	/*相对定位，只要是设计字体，和z-index : 1   大于v_time_bg的z-index。。所以在v_time_bg的上层*/
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	font-size: 11px;
+	line-height: 16px;
+	margin: 0px 3px;
+	position: relative;
+	z-index: 1; /*上层*/
+}
+
+.v_time .v_time_bg { /*产生透明效果*/
+	z-index: 0; /*下层*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 100%;
+	height: 18px;
+	background: none repeat scroll 0% 0% rgb(0, 0, 0);
+	opacity: 0.6; /*透明度*/
+}
+
+.mv_list_vertical .info { /*此div属于li的下半部分，用来存放MV相关信息*/
+	display: table; /*此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+}
+
+.info h3 { /*MV名字链接*/
+	width: 500px;
+	font-weight: bold;
+	font-size: 12px;
+	height: 18px;
+	margin-top: 3px;
+	overflow: hidden;
+	margin-bottom: 4px; /*缩短h与下一段落p的间距*/
+}
+
+.info a.special { /*MV歌名的链接标签*/
+	color: rgb(102, 153, 0);
+	text-decoration: none; /*去掉下划线*/
+	outline: 0px none;
+	padding: 0px;
+}
+
+.info a.special:hover { /*MV歌名*/
+	text-decoration: underline;
+	color: #FF850B;
+	outline: 0px none;
+}
+
+.info p {
+	width: 530px;
+	height: 20px;
+	color:gray;
+	overflow: visible;
+	text-overflow: ellipsis;
+	margin: -0.3em 0; /*缩短p段落间的间距*/
+}
+
+.info em.c9 {
+	color: rgb(153, 153, 153);
+	font-style: normal;
+}
+
+.info a.c3 {
+	text-decoration: none;
+	outline: 0px none;
+	color: rgb(51, 51, 51);
+	font-weight: normal;
+}
+
+.info a.c3:hover {
+	text-decoration: underline;
+	color: rgb(102, 153, 0);
+	outline: 0px none;
+}
+
+.mv_list_vertical .pagetype { /*页面翻页div*/
+	clear: both;
+	height: 40px;
+	padding: 50px 16px 0px;
+}
+
+.pagetype .page-nav {
+	margin: 0px;
+	margin-right:30px;
+	margin-top: -14px;
+	float: right;
+	padding: 0px;
+	clear: both;
+}
+
+.page-nav a {
+	margin: 3px 0px;
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 153, 0);
+	color: rgb(51, 51, 51);
+	text-decoration: none;
+	display: inline-block;
+	height: 18px;
+	line-height: 17px;
+	min-width: 30px;
+	padding: 3px 4px;
+	text-align: center;
+	overflow: hidden;
+	outline: 0px none;
+	vertical-align: bottom;
+	border-radius: 4px;
+	font-weight:bold;
+}
+
+.page-nav a.nextpage {
+	/*background: url("/images/mv/spritebg.png") no-repeat scroll -144px -80px transparent;*/
+	display: inline-block;
+	outline: 0px none;
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px;
+	border: 1px none;
+	color: rgb(51, 51, 51);
+
+	font-size: 14px;
+	vertical-align: bottom;
+	border: 1px solid rgb(204, 204, 204);
+}
+
+.page-nav .go,.queding   {
+	vertical-align: bottom;
+}
+
+.page-nav span.separator {
+	background-color: rgb(255, 255, 255);
+	border: 0px none;
+	/*color: rgb(221, 221, 221);*/
+	color:#999;
+	font-weight: normal;
+	margin: 0px 2px;
+	padding: 2px 6px;
+}
+
+.page-nav a:hover {
+	text-decoration: none;
+	/*color: rgb(51, 153, 0);*	border: 1px solid #3FB438;*/
+	color: #3FB438;
+}
+
+.page-nav a.page_color {
+	background-color:#3FB438;
+	border-color:#3FB438;
+	color:white;
+}
+
+.footer {
+	background: url("../images/allMV_pic/foot.jpg") repeat-x scroll 0px 0px
+		White;
+	border: 0px none;
+	padding-top: 50px;
+	margin-top: 0px;
+	margin: 30px auto 0px;
+	min-width: 1000px;
+	height: 150px;
+	color: rgb(153, 153, 153);
+	line-height: 22px;
+	text-align: center;
+}
+
+.footer p.footer_link {
+	margin: 0px;
+}
+
+.footer_link a {
+	color: rgb(102, 102, 102);
+	text-decoration: none;
+	outline: 0px none;
+}
+
+.footer_link a:hover {
+	color: rgb(102, 153, 0);
+	text-decoration: none;
+	outline: 0px none;
+}
+
+.footer .footer_copy a {
+	text-decoration: none;
+	color: rgb(153, 153, 153);
+}
+
+.flooter .footer_copy p {
+	color: rgb(102, 153, 0);
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer_copy a:hover {
+	text-decoration: none;
+	outline: 0px none;
+	color: rgb(102, 153, 0);
+}
+
+.download_logo {/*下载logo*/
+	position:fixed;
+	bottom:60px;
+	right:0px;
+	width:137px;
+	height:298px;
+	background: url("../images/allMV_pic/download.png");
+	border:none;
+	margin:0px;
+	z-index:299;
+}
+
+.download_logo .hide {
+	position:absolute;
+	right:2px;
+	top:-9px;
+	background: url("../images/allMV_pic/hide.png");
+	width:21px;
+	height:21px;
+}
+
+.download_logo .download_android {
+	position:absolute;
+	right:20px;
+	bottom:21px;
+	color:white;
+	height:18px;
+	padding:0px 5px 2px 6px;
+	background-color: rgb(127,178,23);
+	border-radius:3px;
+	text-decoration:none;
+}
+
+.android_download hover{
+	text-decoration: none;
+}
+
+.a_return_top {
+	text-decoration:none;
+	width:60px;
+	height:20px;
+	position:fixed;
+	bottom:35px;
+	right:10px;
+	color:#008200;
+}
+
+.a_return_top:hover {
+	color:#FF8000;
+}
+
+.a_return_bottom {
+	text-decoration:none;
+	width:60px;
+	height:20px;
+	position:fixed;
+	bottom:15px;
+	right:10px;
+	color:#008200;
+}
+
+.a_return_bottom:hover {
+	color:#FF8000;
+}
+
+/*****************************************************列表显示***********************************************/
+
+
+

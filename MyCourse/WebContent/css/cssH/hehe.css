@@ -1,0 +1,249 @@
+html{
+	background: #EFEFEF;
+}
+a{
+    	color: #CCFF99;
+    	text-decoration: none;
+    	transition: color 0.2s ease-in-out 0s;
+}
+a:hover{
+	color: #669900;
+}
+.flowplayer{ 
+	width: 80%;
+}
+.maxDiv{
+	width: 100%;
+	text-align:center;
+}
+.mvInfo{	
+	background: black;
+	height: 80px;
+	width: 80%;
+	margin: 0 auto;
+}
+.mvName{
+	height: 40px;
+}
+.mvName1{
+	height: 40px;
+	width: 500px;
+	float:left;
+}
+.bofangshu{
+	height: 40px;
+	width: 300px;
+	float: right;
+}
+.bofangshu1{
+	float: right;
+	font-size: 18px;
+	color: #CCCCCC;
+	padding: 7px 5px 0 7px;
+}
+.mvName2{
+	font-size:18px;
+	float:left;
+	color:#CCCCCC;
+	padding: 7px 5px 0 7px;
+}
+.singerName{
+	color: #CCFF99;
+	float: left;
+	font-size:18px;
+	padding: 7px 5px 0 7px;
+}
+.mvScore{
+	height: 40px;
+	margin-bottom:0;
+}
+.fenxiang{
+	float:left;
+	color:#CCCCCC;
+	padding: 7px 5px 0 7px;
+}
+.link{
+	float: left;
+	height: 21px;
+	width: 80px;
+    	margin-top: 6px;
+}
+.link a{
+	background: url("../../logo/share2.png") no-repeat scroll 2px 1px rgba(0, 0, 0, 0);
+    	float: left;
+    	height: 20px;
+    	margin: 1px 1px 0 0;
+    	width: 20px;
+}
+.link .renren{
+    	background-position: 1px -39px;
+}
+.link .weibo{
+    	background-position: 1px -19px;
+}
+.link .qzone{
+	background-position: 1px -59px;
+}
+.pingfen{
+	float:right;	
+}
+.mybtn {
+     	width:60px;
+     	text-align:center;
+     	font-family:Arial,sans-serif;
+     	font-size:12px;
+     	cursor:pointer;
+	border-top-left-radius:0.5em;
+     	border-top-right-radius:0.5em;
+     	border-bottom-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+     	color:#fefee9;
+     	background-color: #669900;
+}
+.main{
+	background: white;
+	height: auto;
+	width: 80%;
+	margin: 2px auto;
+}
+.jieshao{
+	padding:0 20px 0 20px;
+	background: #F7FAF4;
+}
+.jia{
+	float: left;
+}
+.jieshao1{
+	color: #cccccc;
+    	font-family: ΢���ź�;
+    	font-size: 18px;
+	float: left;
+}
+.jieshao2{
+	clear: both;
+    	color: gray;
+    	overflow: hidden;
+    	text-align: justify;
+    	word-wrap: break-word;
+}
+.jieshao3{
+	font-size: 14px;
+	line-height: 22px;
+    	overflow: hidden;
+	height: 45px;
+}
+.gezhongB{
+	font-size: 14px;
+	line-height: 22px;
+	color: gray;
+}
+.jia2{
+	width:96.3%;
+	height: 50px;
+	padding: 0 20px;
+	background: #F7FAF4;
+}
+.beibide{
+	background: #F7FAF4;
+	padding-top: 2px auto;
+	width:100%;
+	height: 160px;
+}
+.avatar{
+	float: left;
+}
+.kuangkuang{
+    	border-radius: 3px;
+    	padding: 0 10px 10px 150px;
+    	position: relative;
+	height: 150px;
+}
+.biaodan{
+	height: 70px;
+	width: 800px;
+}
+.kuangkuang1{
+	height: 70px;
+	width: 800px;
+}
+.wenbenyu{
+	background-color: #FFFFFF;
+    	border: 1px solid #C1C1C1;
+    	border-radius: 3px;
+    	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    	color: #333333;
+    	font-family: arial;
+    	font-size: 14px;
+    	height: 66px;
+    	line-height: 20px;
+    	overflow-y: auto;
+    	padding: 3px;
+    	transition: border-color 0.2s ease 0s, background-color 0.2s ease 0s;
+    	width: 97.6%;
+    	word-wrap: break-word;
+	resize: none;
+}
+.wenbenyuxiabian{
+		height: 60px;
+    	line-height: 28px;
+    	overflow: hidden;
+    	padding-top: 10px;
+    	width: 100%;
+}
+.jianfa{
+		float: right;
+}
+
+
+
+
+.fenye{
+	text-align: right;
+	width: 100%;
+	background: #F7FAF4;
+	height: 40px;
+	padding-top: 15px;
+}
+.heiwei1{
+		float: left;
+		height: 40px;
+		width: 154px;
+		text-align: left;
+}
+.heiwei2{
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	float: right;
+}
+.footer {
+    background-color: #FFFFFF;
+    color: #999999;
+    height: 150px;
+    line-height: 22px;
+    margin: 30px auto 0;
+    min-width: 1000px;
+    text-align: center;
+}
+.footer_link a {
+    color: #666666;
+}
+.footer_copy{
+	font-size:12px;
+}
+.footer_copy a {
+    	color: #999999;
+}
+.footer_link {
+    color: #666666;
+    font-size: 14px;
+    padding: 35px 0 20px;
+}
+.ico_line {
+    background: url("../../logo/ico_index.png") no-repeat scroll -70px 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 10px;
+    margin: 0 8px;
+    overflow: hidden;
+    width: 2px;
+}

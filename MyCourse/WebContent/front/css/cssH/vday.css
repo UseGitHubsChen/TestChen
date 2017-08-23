@@ -1,0 +1,89 @@
+@charset
+"utf-8"
+;
+.countdown_box {
+background: url(/v2/images/app/vchart/vday/x_vday_bg.png) 0 0 repeat-x;
+height: 689px;
+overflow: hidden;
+}
+.countdown_box .wrap {
+width: 980px;
+height: 100%;
+position: relative;
+}
+.vday_bg {
+background: url("/v2/images/app/vchart/vday/vday_bg01.jpg") no-repeat center top;
+height: 690px;
+}
+.vday_01 {
+background: url("/v2/images/app/vchart/vday/vday_01.jpg") no-repeat;
+height: 262px;
+display: block;
+text-indent: -999em;
+overflow: hidden;
+}
+.vday_02,
+.vday_04 {
+background: url("/v2/images/app/vchart/vday/vday_02.jpg") no-repeat;
+height: 184px;
+display: block;
+overflow: hidden;
+}
+.vday_03 {
+background: url("/v2/images/app/vchart/vday/vday_03.jpg") no-repeat;
+height: 243px;
+display: block;
+}
+.vday_04 {
+background: url("/v2/images/app/vchart/vday/vday_04.jpg") no-repeat;
+}
+.vday_time {
+padding: 30px 0 20px 305px;
+color: #ffc;
+font-size: 24px;
+font-weight: 700;
+font-family: "ºÚÌå";
+overflow: hidden;
+}
+.vday_time em {
+color: #ff9;
+padding-right: 50px;
+}
+.countdown {
+padding-left: 411px;
+font-size: 44px;
+line-height: 44px;
+color: White;
+font-family: 'Tahoma';
+overflow: hidden;
+}
+.countdown em {
+padding-right: 72px;
+}
+.vday_live {
+width: 197px;
+margin-left: 427px;
+font-family: "microsoft yahei";
+font-size: 22px;
+text-align: center;
+color: #fff;
+}
+.ico_vday_btn,
+.ico_vday_btn_watch {
+background: url("/v2/images/app/vchart/vday/vday_btn_01.png") no-repeat;
+width: 197px;
+height: 49px;
+display: block;
+text-indent: -999em;
+overflow: hidden;
+margin-top: 10px;
+}
+.ico_vday_btn_watch {
+background: url("/v2/images/app/vchart/vday/vday_btn.png") no-repeat;
+}
+.ico_vday_btn:hover {
+background-position: 0 -52px;
+}
+.ico_vday_btn:active {
+background-position: 0 -104px;
+} 

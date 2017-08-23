@@ -1,0 +1,88 @@
+.timeWo{
+		background: url("../../logo/coundown_widget_2.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    	height: 82px;
+    	margin: 0 0 5px 10px;
+    	padding: 21px 0 0 6px;
+    	width: 272px;
+}
+.timeTitle{
+		color: #FFFFFF;
+    	font: 14px 'microsoft yahei';
+    	margin: 0 0 7px -6px;
+    	text-align: center;
+}
+.days_dash{
+		float: left;
+    	height: 37px;
+    	margin: 4px 25px 0 10px;
+    	width: 45px;
+}
+.hours_dash{
+		float: left;
+    	height: 37px;
+    	margin: 4px 22px 0 0;
+    	width: 45px;
+}
+.minutes_dash{
+		float: left;
+    	height: 37px;
+    	margin: 4px 25px 0 0;
+    	width: 45px;
+}
+.seconds_dash{
+		float: left;
+    	height: 37px;
+    	margin: 4px 0 0 0;
+    	width: 45px;
+}
+.timeFirst{
+		color: #666666;
+    	float: left;
+    	font: bold 27px/38px 'arial';
+    	height: 37px;
+    	text-align: center;
+    	width: 22px;
+		margin-right: 2px;
+}
+.timeLast{
+		color: #666666;
+    	float: left;
+    	font: bold 27px/38px 'arial';
+    	height: 37px;
+    	text-align: center;
+    	width: 22px;
+		margin-right: 0;
+}
+#countdown_dashboard {
+    	overflow: hidden;
+    	width: 270px;
+		height: 40px;
+}
+.dash {
+    	height: 38px;
+    	width: 45px;
+}
+.dash .digit {
+		background: red;
+    	font-size: 22px;
+    	width: 12px;
+		height: 38px;
+		float: left;
+}
+.haveday{
+		height: 100px;
+    	padding: 21px aotu;
+    	width: 272px;
+    	text-align:center;
+}
+.gani{
+    		padding-top:30px;
+    		font-family: “微软雅黑”;
+    		font-size: 12px;
+}
+.lxftime{
+			margin-top:10px;	
+			color: #669900;
+    		font-family: “微软雅黑”;
+    		font-size: 22px;
+}
